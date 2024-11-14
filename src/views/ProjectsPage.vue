@@ -60,26 +60,6 @@
             </a>
           </div>
         </header>
-        <div
-          class="flex flex-row items-center justify-between mt-20 space-x-64"
-        >
-          <section class="flex flex-col items-start">
-            <h1 class="text-3xl text-light-blue mb-4">Welcome! I Am</h1>
-            <h2 class="text-5xl text-medium-blue">Amra Ibrahimovic</h2>
-            <p class="text-lg mt-6 text-light-blue">
-              Web Designer & Development
-            </p>
-          </section>
-          <div
-            class="flex bg-dark-blue rounded-full w-96 h-96 flex-shrink-0 justify-center items-center"
-          >
-            <img
-              src="/Amra.png"
-              alt="Amra"
-              class="rounded-full w-96 h-96 border-light-blue border-8"
-            />
-          </div>
-        </div>
       </div>
     </ion-content>
   </ion-page>
