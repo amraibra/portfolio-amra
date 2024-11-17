@@ -10,21 +10,20 @@
           >
           <div class="flex space-x-4">
             <button
-              class="bg-light-blue rounded-lg p-3 text-white text-sm text-center"
+              class="bg-light-blue rounded-lg p-3 text-white text-sm text-center hover:bg-lightest-blue"
             >
-              Contact
+              CodeExhibit
             </button>
             <button
               type="button"
-              class="bg-light-blue rounded-lg p-3 text-white text-sm text-center"
-              @click="toProjectsPage"
+              class="bg-light-blue rounded-lg p-3 text-white text-sm text-center hover:bg-lightest-blue"
             >
-              Projects
+              TraceChain
             </button>
             <button
-              class="bg-light-blue rounded-lg p-3 text-white text-sm text-center"
+              class="bg-light-blue rounded-lg p-3 text-white text-sm text-center hover:bg-lightest-blue"
             >
-              Resume
+             InvolveU
             </button>
           </div>
           <div class="flex space-x-4">
@@ -35,7 +34,7 @@
               <img
                 src="/LinkedIn.png"
                 alt="linkedIn"
-                class="w-4 h-4 inline-block rounded-full"
+                class="w-4 h-4 inline-block rounded-sm"
               />
             </a>
             <a
@@ -53,8 +52,8 @@
               class="bg-light-blue rounded-full w-8 h-8 text-white text-sm text-center flex justify-center items-center"
             >
               <img
-                src="/Github.png"
-                alt="GitHub"
+                src="/Outlook.png"
+                alt="Outlook"
                 class="w-5 h-5 inline-block rounded-full"
               />
             </a>

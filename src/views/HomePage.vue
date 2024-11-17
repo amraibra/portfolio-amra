@@ -10,19 +10,19 @@
           >
           <div class="flex space-x-4">
             <button
-              class="bg-light-blue rounded-lg p-3 text-white text-sm text-center"
+              class="bg-light-blue rounded-lg p-3 text-white text-sm text-center hover:bg-lightest-blue"
             >
               Contact
             </button>
             <button
               type="button"
-              class="bg-light-blue rounded-lg p-3 text-white text-sm text-center"
+              class="bg-light-blue rounded-lg p-3 text-white text-sm text-center hover:bg-lightest-blue"
               @click="toProjectsPage"
             >
               Projects
             </button>
             <button
-              class="bg-light-blue rounded-lg p-3 text-white text-sm text-center"
+              class="bg-light-blue rounded-lg p-3 text-white text-sm text-center hover:bg-lightest-blue"
             >
               Resume
             </button>
