@@ -30,6 +30,8 @@
             <a
               href="https://www.linkedin.com/in/amra-ibrahimovic-704791173/"
               class="bg-light-blue rounded-full w-8 h-8 text-white text-sm text-center flex justify-center items-center"
+              target="_blank"
+              rel="noreferrer noopener"
             >
               <img
                 src="/LinkedIn.png"
@@ -40,6 +42,8 @@
             <a
               href="https://github.com/amraibra"
               class="bg-light-blue rounded-full w-8 h-8 text-white text-sm text-center flex justify-center items-center"
+              target="_blank"
+              rel="noreferrer noopener"
             >
               <img
                 src="/Github.png"
