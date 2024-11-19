@@ -48,7 +48,7 @@
               />
             </a>
             <a
-              href="https://github.com/amraibra"
+              href="mailto:i.amra02@live.com"
               class="bg-light-blue rounded-full w-8 h-8 text-white text-sm text-center flex justify-center items-center"
             >
               <img
