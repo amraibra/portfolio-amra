@@ -89,7 +89,7 @@
 export default {
   methods: {
     toProjectsPage() {
-      window.location.href = "/projects";
+      this.$router.push("/projects");
     },
   },
 };
