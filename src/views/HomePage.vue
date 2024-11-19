@@ -14,13 +14,12 @@
             >
               Contact
             </button>
-            <button
-              type="button"
+            <a
               class="bg-light-blue rounded-lg p-3 text-white text-sm text-center hover:bg-lightest-blue"
-              @click="toProjectsPage"
+              href="/projects"
             >
               Projects
-            </button>
+            </a>
             <button
               class="bg-light-blue rounded-lg p-3 text-white text-sm text-center hover:bg-lightest-blue"
             >
@@ -85,12 +84,4 @@
   </ion-page>
 </template>
 
-<script>
-export default {
-  methods: {
-    toProjectsPage() {
-      this.$router.push("/projects");
-    },
-  },
-};
-</script>
+<script></script>
