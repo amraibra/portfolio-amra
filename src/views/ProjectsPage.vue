@@ -10,20 +10,23 @@
           >
           <div class="flex space-x-4">
             <button
+              @click="selectedProject = 'CodeExhibit'"
               class="bg-light-blue rounded-lg p-3 text-white text-sm text-center hover:bg-lightest-blue"
             >
               CodeExhibit
             </button>
             <button
+              @click="selectedProject = 'TraceChain'"
               type="button"
               class="bg-light-blue rounded-lg p-3 text-white text-sm text-center hover:bg-lightest-blue"
             >
               TraceChain
             </button>
             <button
+              @click="selectedProject = 'InvolveU'"
               class="bg-light-blue rounded-lg p-3 text-white text-sm text-center hover:bg-lightest-blue"
             >
-             InvolveU
+              InvolveU
             </button>
           </div>
           <div class="flex space-x-4">
@@ -59,6 +62,42 @@
             </a>
           </div>
         </header>
+
+        <!-- Project Content -->
+        <main class="w-full max-w-screen-xl p-8 text-black">
+          <div v-if="selectedProject === 'CodeExhibit'">
+            <h2 class="text-2xl font-bold mb-4">CodeExhibit</h2>
+            <p>
+              CodeExhibit is a web application that allows students to upload
+              their projects for other students to view and have access to.
+              Students can upload their github repository, add pictures, list
+              the tools they utilized, and get inspiration from other projects.
+            </p>
+          </div>
+          <div v-if="selectedProject === 'TraceChain'">
+            <h2 class="text-2xl font-bold mb-4">TraceChain</h2>
+            <p>
+              TraceChain is a social media application where users can interact
+              with posts that are authenticated by sources. Posts highlighted in
+              green or red indicate if the user added a source to a post. Of
+              course, not every post needs to be authenticated by a source and
+              the user can filter their feed and profile any way they would
+              like.
+            </p>
+          </div>
+          <div v-if="selectedProject === 'InvolveU'">
+            <h2 class="text-2xl font-bold mb-4">InvolveU</h2>
+            <p>
+              InvolveU is a one stop shop website for Southern New Hampshire
+              University's event center. This website gives students access to
+              all current events happening on campus and students can also RSVP
+              or add these events to their favoites. This project was already
+              built when my team took over and added all the missing pieces
+              which include a profile, more calendar features, and major
+              security improvements.
+            </p>
+          </div>
+        </main>
       </div>
     </ion-content>
   </ion-page>
@@ -66,10 +105,14 @@
 
 <script>
 export default {
-  methods: {
-    toProjectsPage() {
-      window.location.href = "/projects";
-    },
+  data() {
+    return {
+      selectedProject: "CodeExhibit", // Default project to show
+    };
   },
 };
 </script>
+
+<style>
+/* Add your styles here */
+</style>
