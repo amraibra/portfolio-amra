@@ -1,7 +1,7 @@
 <template>
   <ion-page>
-    <ion-content class="bg-white min-h-screen">
-      <div class="flex h-full flex-col items-center bg-white font-customFont">
+    <ion-content class="bg-white min-h-screen h-auto">
+      <div class="flex flex-col items-center bg-white font-customFont w-full">
         <header
           class="flex flex-row justify-between items-center w-full max-w-screen-xl text-black text-xl p-8 pb-5 border-lightest-blue border-b-2"
         >
@@ -37,7 +37,7 @@
               rel="noreferrer noopener"
             >
               <img
-                src="/LinkedIn.png"
+                src="/Socials/LinkedIn.png"
                 alt="linkedIn"
                 class="w-4 h-4 inline-block rounded-sm"
               />
@@ -49,7 +49,7 @@
               rel="noreferrer noopener"
             >
               <img
-                src="/Github.png"
+                src="/Socials/Github.png"
                 alt="GitHub"
                 class="w-5 h-5 inline-block rounded-full"
               />
@@ -59,7 +59,7 @@
               class="bg-light-blue rounded-full w-8 h-8 text-white text-sm text-center flex justify-center items-center"
             >
               <img
-                src="/Outlook.png"
+                src="/Socials/Outlook.png"
                 alt="Outlook"
                 class="w-5 h-5 inline-block rounded-full"
               />
@@ -67,8 +67,9 @@
           </div>
         </header>
 
-        <!-- Project Content -->
-        <main class="w-full max-w-screen-xl p-8 text-black">
+        <!-- Main -->
+        <main class="w-full max-w-screen-xl p-8 pb-20 text-black">
+          <!--CodeExhibit-->
           <div v-if="selectedProject === 'CodeExhibit'">
             <h2 class="text-2xl font-bold mb-4">CodeExhibit</h2>
             <p>
@@ -77,7 +78,20 @@
               Students can upload their github repository, add pictures, list
               the tools they utilized, and get inspiration from other projects.
             </p>
+            <!--Image Slider-->
+            <swiper :slides-per-view="1" navigation pagination class="pt-10">
+              <swiper-slide>
+                <img src="/CodeExhibit/CeHome.png" alt="CEHome" class="w-full" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="/CodeExhibit/CodeExhibit Projects.png" alt="CEProjects" class="w-full" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="/CodeExhibit/CeForm.png" alt="CEForm" class="w-full" />
+              </swiper-slide>
+            </swiper>
           </div>
+          <!--TraceChain-->
           <div v-if="selectedProject === 'TraceChain'">
             <h2 class="text-2xl font-bold mb-4">TraceChain</h2>
             <p>
@@ -88,7 +102,26 @@
               the user can filter their feed and profile any way they would
               like.
             </p>
+            <!--Image Slider-->
+            <swiper :slides-per-view="1" navigation pagination class="pt-10">
+              <swiper-slide>
+                <img src="/TraceChain/TcLogin.png" alt="TCLogin" class="w-full" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="/TraceChain/TraceChain Feed.png" alt="TCFeed" class="w-full" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="/TraceChain/TcPost.png" alt="TCPost" class="w-full" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="/TraceChain/TraceChain Profile.png" alt="TCProfile" class="w-full" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="/TraceChain/TraceChain Account Settings.png" alt="TCSettings" class="w-full" />
+              </swiper-slide>
+            </swiper>
           </div>
+          <!--InvolveU-->
           <div v-if="selectedProject === 'InvolveU'">
             <h2 class="text-2xl font-bold mb-4">InvolveU</h2>
             <p>
@@ -100,6 +133,18 @@
               which include a profile, more calendar features, and major
               security improvements.
             </p>
+            <!--Image Slider-->
+            <swiper :slides-per-view="1" navigation pagination class="pt-10">
+              <swiper-slide>
+                <img src="/InvolveU/InvolveU Profile.png" alt="IuProfile" class="w-full" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="/InvolveU/IuHome.png" alt="IuHome" class="w-full" />
+              </swiper-slide>
+              <swiper-slide>
+                <img src="/InvolveU/IuSettings.png" alt="IuSettings" class="w-full" />
+              </swiper-slide>
+            </swiper>
           </div>
         </main>
       </div>
@@ -108,11 +153,18 @@
 </template>
 
 <script>
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/swiper-bundle.css";
+
 export default {
   data() {
     return {
       selectedProject: "CodeExhibit", // Default project to show
     };
   },
+  components: {
+    Swiper,
+    SwiperSlide
+  }
 };
 </script>

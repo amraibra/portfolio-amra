@@ -34,7 +34,7 @@
               rel="noreferrer noopener"
             >
               <img
-                src="/LinkedIn.png"
+                src="/Socials/LinkedIn.png"
                 alt="linkedIn"
                 class="w-4 h-4 inline-block rounded-sm"
               />
@@ -46,7 +46,7 @@
               rel="noreferrer noopener"
             >
               <img
-                src="/Github.png"
+                src="/Socials/Github.png"
                 alt="GitHub"
                 class="w-5 h-5 inline-block rounded-full"
               />
@@ -56,7 +56,7 @@
               class="bg-light-blue rounded-full w-8 h-8 text-white text-sm text-center flex justify-center items-center"
             >
               <img
-                src="/Outlook.png"
+                src="/Socials/Outlook.png"
                 alt="Outlook"
                 class="w-5 h-5 inline-block rounded-full"
               />
