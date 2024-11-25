@@ -52,7 +52,7 @@
               />
             </a>
             <a
-              href="mailto:i.amra02@live.com"
+              href="mailto:i.amra02@live.com?subject=Portfolio%20Interest"
               class="bg-light-blue rounded-full w-8 h-8 text-white text-sm text-center flex justify-center items-center"
             >
               <img
