@@ -1,6 +1,6 @@
 <template>
   <ion-page>
-    <ion-content class="bg-white min-h-screen h-auto">
+    <ion-content class="bg-white min-h-screen h-auto overflow-y-auto">
       <div class="flex flex-col items-center bg-white font-customFont w-full">
         <header
           class="flex flex-row justify-between items-center w-full max-w-screen-xl text-black text-xl p-8 pb-5 border-lightest-blue border-b-2"
@@ -81,13 +81,25 @@
             <!--Image Slider-->
             <swiper :slides-per-view="1" navigation pagination class="pt-10">
               <swiper-slide>
-                <img src="/CodeExhibit/CeHome.png" alt="CEHome" class="w-full" />
+                <img
+                  src="/CodeExhibit/CeHome.png"
+                  alt="CEHome"
+                  class="w-full"
+                />
               </swiper-slide>
               <swiper-slide>
-                <img src="/CodeExhibit/CodeExhibit Projects.png" alt="CEProjects" class="w-full" />
+                <img
+                  src="/CodeExhibit/CodeExhibit Projects.png"
+                  alt="CEProjects"
+                  class="w-full"
+                />
               </swiper-slide>
               <swiper-slide>
-                <img src="/CodeExhibit/CeForm.png" alt="CEForm" class="w-full" />
+                <img
+                  src="/CodeExhibit/CeForm.png"
+                  alt="CEForm"
+                  class="w-full"
+                />
               </swiper-slide>
             </swiper>
           </div>
@@ -105,19 +117,35 @@
             <!--Image Slider-->
             <swiper :slides-per-view="1" navigation pagination class="pt-10">
               <swiper-slide>
-                <img src="/TraceChain/TcLogin.png" alt="TCLogin" class="w-full" />
+                <img
+                  src="/TraceChain/TcLogin.png"
+                  alt="TCLogin"
+                  class="w-full"
+                />
               </swiper-slide>
               <swiper-slide>
-                <img src="/TraceChain/TraceChain Feed.png" alt="TCFeed" class="w-full" />
+                <img
+                  src="/TraceChain/TraceChain Feed.png"
+                  alt="TCFeed"
+                  class="w-full"
+                />
               </swiper-slide>
               <swiper-slide>
                 <img src="/TraceChain/TcPost.png" alt="TCPost" class="w-full" />
               </swiper-slide>
               <swiper-slide>
-                <img src="/TraceChain/TraceChain Profile.png" alt="TCProfile" class="w-full" />
+                <img
+                  src="/TraceChain/TraceChain Profile.png"
+                  alt="TCProfile"
+                  class="w-full"
+                />
               </swiper-slide>
               <swiper-slide>
-                <img src="/TraceChain/TraceChain Account Settings.png" alt="TCSettings" class="w-full" />
+                <img
+                  src="/TraceChain/TraceChain Account Settings.png"
+                  alt="TCSettings"
+                  class="w-full"
+                />
               </swiper-slide>
             </swiper>
           </div>
@@ -136,13 +164,21 @@
             <!--Image Slider-->
             <swiper :slides-per-view="1" navigation pagination class="pt-10">
               <swiper-slide>
-                <img src="/InvolveU/InvolveU Profile.png" alt="IuProfile" class="w-full" />
+                <img
+                  src="/InvolveU/InvolveU Profile.png"
+                  alt="IuProfile"
+                  class="w-full"
+                />
               </swiper-slide>
               <swiper-slide>
                 <img src="/InvolveU/IuHome.png" alt="IuHome" class="w-full" />
               </swiper-slide>
               <swiper-slide>
-                <img src="/InvolveU/IuSettings.png" alt="IuSettings" class="w-full" />
+                <img
+                  src="/InvolveU/IuSettings.png"
+                  alt="IuSettings"
+                  class="w-full"
+                />
               </swiper-slide>
             </swiper>
           </div>
@@ -164,7 +200,7 @@ export default {
   },
   components: {
     Swiper,
-    SwiperSlide
-  }
+    SwiperSlide,
+  },
 };
 </script>
