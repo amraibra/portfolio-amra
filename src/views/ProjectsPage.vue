@@ -68,7 +68,7 @@
         </header>
 
         <!-- Main -->
-        <main class="w-full max-w-screen-xl p-8 pb-20 text-black">
+        <main class="w-full max-w-screen-xl p-8 pb-20 text-black h-auto">
           <!--CodeExhibit-->
           <div v-if="selectedProject === 'CodeExhibit'">
             <h2 class="text-2xl font-bold mb-4">CodeExhibit</h2>
@@ -79,7 +79,12 @@
               the tools they utilized, and get inspiration from other projects.
             </p>
             <!--Image Slider-->
-            <swiper :slides-per-view="1" navigation pagination class="pt-10">
+            <swiper
+              :slides-per-view="1"
+              navigation
+              pagination
+              class="pt-10 h-auto"
+            >
               <swiper-slide>
                 <img
                   src="/CodeExhibit/CeHome.png"
