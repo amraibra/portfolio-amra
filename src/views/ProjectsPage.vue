@@ -1,6 +1,6 @@
 <template>
   <ion-page>
-    <ion-content class="bg-white min-h-screen h-auto overflow-y-auto">
+    <div class="bg-white min-h-screen scrollable-container">
       <div class="flex flex-col items-center bg-white font-customFont w-full">
         <header
           class="flex flex-row justify-between items-center w-full max-w-screen-xl text-black text-xl p-8 pb-5 border-lightest-blue border-b-2"
@@ -68,7 +68,7 @@
         </header>
 
         <!-- Main -->
-        <main class="w-full max-w-screen-xl p-8 pb-20 text-black h-auto">
+        <div class="w-full max-w-screen-xl p-8 pb-20 text-black">
           <!--CodeExhibit-->
           <div v-if="selectedProject === 'CodeExhibit'">
             <h2 class="text-2xl font-bold mb-4">CodeExhibit</h2>
@@ -83,7 +83,7 @@
               :slides-per-view="1"
               navigation
               pagination
-              class="pt-10 h-auto"
+              class="pt-10"
             >
               <swiper-slide>
                 <img
@@ -187,9 +187,9 @@
               </swiper-slide>
             </swiper>
           </div>
-        </main>
+        </div>
       </div>
-    </ion-content>
+    </div>
   </ion-page>
 </template>
 
@@ -209,3 +209,10 @@ export default {
   },
 };
 </script>
+
+<style>
+.scrollable-container {
+  height: 100vh; /* Ensure it takes the full viewport height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+</style>
