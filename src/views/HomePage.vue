@@ -16,9 +16,13 @@
         >
           Projects
         </a>
-        <button class="bg-light-blue rounded-lg p-3 text-white text-sm hover:bg-lightest-blue">
+        <a 
+          href="/Resume - Amra Ibrahimovic.pdf" 
+          target="_blank" 
+          class="bg-light-blue rounded-lg p-3 text-white text-sm hover:bg-lightest-blue text-center"
+        >
           Resume
-        </button>
+        </a>
       </div>
       <div class="flex space-x-4">
         <a

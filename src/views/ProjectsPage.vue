@@ -209,10 +209,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.scrollable-container {
-  height: 100vh; /* Ensure it takes the full viewport height */
-  overflow-y: auto; /* Enable vertical scrolling */
-}
-</style>
