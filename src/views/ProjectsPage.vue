@@ -1,5 +1,4 @@
 <template>
-  <ion-page>
     <div class="bg-white min-h-screen scrollable-container">
       <div class="flex flex-col items-center bg-white font-customFont w-full">
         <header
@@ -189,7 +188,6 @@
         </div>
       </div>
     </div>
-  </ion-page>
 </template>
 
 <script>
@@ -208,3 +206,10 @@ export default {
   },
 };
 </script>
+
+<style>
+.scrollable-container {
+  height: 100vh; /* Ensure it takes the full viewport height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+</style>
