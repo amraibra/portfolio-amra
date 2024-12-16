@@ -59,7 +59,7 @@
       >
         <!-- Image Section -->
         <div
-          class="ml-10 w-full max-w-[60%] md:max-w-[35%] lg:max-w-[60%] xl-max-w-[70%] rounded-xl overflow-hidden shadow-2xl shadow-slate-700 transform scale-100 hover:scale-105 transition-all duration-500"
+          class="ml-10 w-auto h-auto rounded-xl overflow-hidden shadow-2xl shadow-slate-700 transform scale-100 hover:scale-105 transition-all duration-500"
         >
           <img
             src="/Amra.png"
