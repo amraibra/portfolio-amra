@@ -11,20 +11,20 @@
           <div class="flex space-x-4">
             <button
               @click="selectedProject = 'CodeExhibit'"
-              class="bg-light-blue hover:bg-lightest-blue text-sm transition-all duration-300 transform hover:-translate-y-1 rounded-lg p-3 text-white text-sm text-center hover:bg-lightest-blue"
+              class="bg-light-blue hover:bg-lightest-blue text-sm transition-all duration-300 transform hover:-translate-y-1 rounded-lg p-3 text-white text-center"
             >
               CodeExhibit
             </button>
             <button
               @click="selectedProject = 'TraceChain'"
               type="button"
-              class="bg-light-blue hover:bg-lightest-blue text-sm transition-all duration-300 transform hover:-translate-y-1 rounded-lg p-3 text-white text-sm text-center hover:bg-lightest-blue"
+              class="bg-light-blue hover:bg-lightest-blue text-sm transition-all duration-300 transform hover:-translate-y-1 rounded-lg p-3 text-white text-center"
             >
               TraceChain
             </button>
             <button
               @click="selectedProject = 'InvolveU'"
-              class="bg-light-blue hover:bg-lightest-blue text-sm transition-all duration-300 transform hover:-translate-y-1 rounded-lg p-3 text-white text-sm text-center hover:bg-lightest-blue"
+              class="bg-light-blue hover:bg-lightest-blue text-sm transition-all duration-300 transform hover:-translate-y-1 rounded-lg p-3 text-white text-center"
             >
               InvolveU
             </button>
@@ -32,7 +32,7 @@
           <div class="flex space-x-4">
             <a
               href="https://www.linkedin.com/in/amra-ibrahimovic-704791173/"
-              class="bg-light-blue hover:bg-lightest-blue text-sm transition-all duration-300 transform hover:-translate-y-1 rounded-full w-8 h-8 text-white text-sm text-center flex justify-center items-center"
+              class="bg-light-blue hover:bg-lightest-blue text-sm transition-all duration-300 transform hover:-translate-y-1 rounded-full w-8 h-8 text-white text-center flex justify-center items-center"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -44,7 +44,7 @@
             </a>
             <a
               href="https://github.com/amraibra"
-              class="bg-light-blue hover:bg-lightest-blue text-sm transition-all duration-300 transform hover:-translate-y-1 rounded-full w-8 h-8 text-white text-sm text-center flex justify-center items-center"
+              class="bg-light-blue hover:bg-lightest-blue text-sm transition-all duration-300 transform hover:-translate-y-1 rounded-full w-8 h-8 text-white text-center flex justify-center items-center"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -56,7 +56,7 @@
             </a>
             <a
               href="mailto:i.amra02@live.com"
-              class="bg-light-blue hover:bg-lightest-blue text-sm transition-all duration-300 transform hover:-translate-y-1 rounded-full w-8 h-8 text-white text-sm text-center flex justify-center items-center"
+              class="bg-light-blue hover:bg-lightest-blue text-sm transition-all duration-300 transform hover:-translate-y-1 rounded-full w-8 h-8 text-white text-center flex justify-center items-center"
             >
               <img
                 src="/Socials/Outlook.png"
@@ -71,7 +71,9 @@
         <div class="w-full max-w-screen-xl p-8 pb-20">
           <!--CodeExhibit-->
           <div v-if="selectedProject === 'CodeExhibit'">
-            <h2 class="text-2xl font-bold mb-4 text-darkest-blue">CodeExhibit</h2>
+            <h2 class="text-2xl font-bold mb-4 text-darkest-blue">
+              CodeExhibit
+            </h2>
             <p class="text-slate-600">
               CodeExhibit is a web application that allows students to upload
               their projects for other students to view and have access to.
@@ -79,12 +81,7 @@
               the tools they utilized, and get inspiration from other projects.
             </p>
             <!--Image Slider-->
-            <swiper
-              :slides-per-view="1"
-              navigation
-              pagination
-              class="pt-10"
-            >
+            <swiper :slides-per-view="1" navigation pagination class="pt-10">
               <swiper-slide>
                 <img
                   src="/CodeExhibit/CeHome.png"
@@ -110,7 +107,9 @@
           </div>
           <!--TraceChain-->
           <div v-if="selectedProject === 'TraceChain'">
-            <h2 class="text-2xl font-bold mb-4 text-darkest-blue">TraceChain</h2>
+            <h2 class="text-2xl font-bold mb-4 text-darkest-blue">
+              TraceChain
+            </h2>
             <p class="text-slate-600">
               TraceChain is a social media application where users can interact
               with posts that are authenticated by sources. Posts highlighted in
