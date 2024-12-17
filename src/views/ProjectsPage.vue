@@ -54,7 +54,7 @@
               />
             </a>
             <a
-              href="mailto:i.amra02@live.com"
+              href="mailto:i.amra02@live.com?subject=Portfolio%20Interest"
               class="bg-light-blue hover:bg-lightest-blue text-sm transition-all duration-300 transform hover:-translate-y-1 rounded-full w-8 h-8 text-white text-center flex justify-center items-center"
             >
               <img

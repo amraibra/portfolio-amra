@@ -45,7 +45,7 @@
           <img src="/Socials/Github.png" alt="GitHub" class="w-5 h-5" />
         </a>
         <a
-          href="mailto:i.amra02@live.com"
+          href="mailto:i.amra02@live.com?subject=Portfolio%20Interest"
           class="bg-light-blue rounded-full hover:bg-lightest-blue text-sm transition-all duration-300 transform hover:-translate-y-1 w-8 h-8 flex items-center justify-center"
         >
           <img src="/Socials/Outlook.png" alt="Outlook" class="w-5 h-5" />
@@ -59,7 +59,7 @@
       >
         <!-- Image Section -->
         <div
-          class="ml-10 w-auto h-auto max-w-[500px] max-h-[500px] rounded-xl overflow-hidden shadow-2xl shadow-slate-700 transform scale-100 hover:scale-105 transition-all duration-500"
+          class="ml-10 w-auto h-auto max-w-[525px] max-h-[525px] rounded-xl overflow-hidden shadow-2xl shadow-slate-700 transform scale-100 hover:scale-105 transition-all duration-500"
         >
           <img
             src="/Amra.png"
@@ -82,7 +82,7 @@
             I graduated from Southern New Hampshire University with a Bachelor's
             in Computer Science. During my time at university, I took the time
             to teach myself front-end development. With the opportunity, I was
-            able to learn many different languages, frameworks, API's, and more.
+            able to learn many different languages, frameworks, APIs, and more.
             Now I am looking to expand my knowledge and gain the experience I
             need to be a better developer.
           </p>
